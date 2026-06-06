@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fall 01 · DermaDecisions</title>
+  <meta name="description" content="DermaDecisions ist eine webbasierte klinische Entscheidungssimulation für dermatologische Lehre.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a class="brand" href="index.html">
+      <img src="assets/img/dermadecisions_logo.png" alt="DermaDecisions Logo">
+      <div class="brand-text">
+        <strong>DermaDecisions</strong>
+        <span>Klinische Entscheidungssimulation</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a class="" href="index.html">Start</a>
+      <a class="active" href="faelle.html">Fälle</a>
+      <a class="" href="so-funktioniert.html">So funktioniert’s</a>
+      <a class="" href="evaluation.html">Evaluation</a>
+      <a class="" href="ueber.html">Über das Projekt</a>
+    </div>
+    <a class="btn" href="fall-01.html"><span class="nowrap">Demo starten&nbsp;→</span></a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-title">
+    <span class="eyebrow">Interaktiver Demo-Fall</span>
+    <h1>Fall 01 · Plaque-Psoriasis</h1>
+    <p class="lead">Ein erstes Fallbeispiel mit echtem klinischen Bild, vier Entscheidungspunkten, Feedback, Score und Lernpfad-Visualisierung.</p>
+  </section>
+  <section class="case-layout" data-case-game>
+    <aside class="sidebar">
+      <div class="case-image-large"><img src="assets/img/fall_psoriasis.png" alt="Fall 01"></div>
+      <div class="info-box"><h3>Patient:inneninformationen</h3><div class="info-table"><div class="info-row"><strong>Alter</strong><span>48 Jahre</span></div><div class="info-row"><strong>Leitsymptom</strong><span>schuppende Plaques</span></div><div class="info-row"><strong>Dauer</strong><span>mehrere Monate</span></div><div class="info-row"><strong>Allgemeinzustand</strong><span>stabil</span></div></div></div>
+      <div class="info-box"><h3>Vitalparameter</h3><div class="vitals-grid"><div class="vital-card"><strong>RR</strong><span>128/78 mmHg</span></div><div class="vital-card"><strong>Puls</strong><span>78 /min</span></div><div class="vital-card"><strong>Temp.</strong><span>36.8 °C</span></div><div class="vital-card"><strong>SpO₂</strong><span>98 %</span></div></div></div>
+      <div class="info-box"><h3>Entscheidungsbaum</h3><div class="tree"><div class="tree-node active" data-tree-node>1. Erste Einordnung</div><div class="tree-node" data-tree-node>2. Differenzialdiagnostik</div><div class="tree-node" data-tree-node>3. Ersttherapie</div><div class="tree-node" data-tree-node>4. Weiteres Management</div></div></div>
+    </aside>
+    <section class="game-panel">
+      <div class="game-head">
+        <div>
+          <h2 data-step-title>1. Schritt</h2>
+          <p class="muted" style="margin:6px 0 0">Fortschritt: <span data-progress-text>1 / 4</span></p>
+          <div class="progress" style="width:180px"><span data-progress-fill></span></div>
+        </div>
+        <div class="pill">Score: <span data-score>0</span></div>
+      </div>
+      <div class="game-body">
+        <div>
+          <h3 data-question></h3>
+          <p class="muted" data-teaching></p>
+          <div class="lab-panel" data-lab-panel style="display:none">
+            <h4>Fiktive Laborwerte</h4>
+            
+            <div class="lab-grid" data-lab-grid></div>
+          </div>
+          <div class="decision-options" data-choices></div>
+          <div class="feedback" data-feedback></div>
+          <div class="results" data-results></div>
+          <div class="next-row"><button class="btn small" data-next style="display:none">Weiter</button></div>
+        </div>
+        <aside>
+          <div class="score-card">
+            <h3>Lernziel</h3>
+            <p>Strukturierte Einordnung erythematosquamöser Plaques, leitliniennahe Therapie und Berücksichtigung von Komorbiditäten.</p>
+            <div class="score-value" data-score>0</div>
+            <p>Punkte werden für klinisch sinnvolle Entscheidungen vergeben.</p>
+          </div>
+          <div class="info-box" style="margin-top:16px">
+            <h3>Demo-Hinweis</h3>
+            <p class="muted">Dies ist ein didaktisches Beispiel für den Proof of Concept und ersetzt keine medizinische Beratung.</p>
+            <button class="btn small secondary" data-reset style="margin-top:12px">Fall zurücksetzen</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </section>
+</main>
+<script src="assets/js/case-engine.js"></script>
+<script src="assets/js/case-psoriasis.js"></script>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong>DermaDecisions</strong>
+      <p>Klinische Entscheidungssimulation in der Dermatologie</p>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="faelle.html">Fälle</a>
+        <a href="evaluation.html">Evaluation</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+    <div>
+      <p>Medical Educator Scientist Programme · 2026–2028</p>
+    </div>
+  </div>
+</footer>
+</body></html>
